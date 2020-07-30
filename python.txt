@@ -143,3 +143,46 @@ class MobileMoneyAccount(Account):
             self.airtime.append(airtime)
             print("You have bought airtime worth {} on {}".format(amount, self.get_formatted_time(time)))
             
+
+def paybills(self,amount):
+        try: 
+            amount-1
+        except TypeError:
+            print("please enter amount in figures")
+            return
+        if amount>self.balance:
+            print("You have insufficient balance.Your balance is {}".format(self.balance))
+
+        else:
+            self.balance-=amount
+            time=datetime.now()
+            paybills={
+                "time":time
+                "paybills":amount
+            }
+            self.paybills.append(paybills)
+            print("you have paid bills worth {}.your balance is {}".format(amount,self.get_formatted_time(time)))
+    def send_money(self,amount):
+        try:
+            amount-1
+        except TypeError:
+            print("please enter amount in figures") 
+            return
+            if amount>self.balance:
+                print("failed.insuffcient fundsin your account.your balance is {}".format(self.balance))
+                else:
+            self.balance-=amount
+            time=datetime.now()
+            money={
+                "time":time
+                "money":amount
+            }
+            self.money.append(money)
+            print(" confirmed  you have sent {} .your balance is {}".format(amount,self.get_formatted_time(time)))
+    def receive_money(self):
+        time=datetime.now()
+        money_received={
+            "time":time
+            return  "You have received {}.your balane is {}".format(self.get_formatted_time)
+            
+        }
