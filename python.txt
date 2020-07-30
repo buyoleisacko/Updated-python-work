@@ -143,7 +143,14 @@ class MobileMoneyAccount(Account):
             self.airtime.append(airtime)
             print("You have bought airtime worth {} on {}".format(amount, self.get_formatted_time(time)))
             
-
+def __init__(self,first_name,second_name,phone_number,service_provider):
+  self.service_provider=service_provider
+  self.airtime=[]
+  self.bills=[]
+  self.money=[]
+  self.received=[]
+  super().__init__(first_name,second_name,phone_number)
+  
 def paybills(self,amount):
         try: 
             amount-1
