@@ -183,6 +183,6 @@ def paybills(self,amount):
         time=datetime.now()
         money_received={
             "time":time
-            return  "You have received {}.your balane is {}".format(self.get_formatted_time)
+            return  "You have received {}.your balance is {}".format(self.get_formatted_time)
             
         }
