@@ -118,7 +118,16 @@ print(acc1.get_balance())
 print(acc2.get_balance())
 
 print(acc1.account_name())
-print(acc2.account_name())
+print(acc2.account_name()
+
+)def __init__(self,first_name,second_name,phone_number,service_provider):
+  self.service_provider=service_provider
+  self.airtime=[]
+  self.bills=[]
+  self.money=[]
+  self.received=[]
+  super().__init__(first_name,second_name,phone_number)
+
 
 class MobileMoneyAccount(Account):
     def __init__(self, first_name, last_name, phone_number, service_provider):
@@ -143,14 +152,8 @@ class MobileMoneyAccount(Account):
             self.airtime.append(airtime)
             print("You have bought airtime worth {} on {}".format(amount, self.get_formatted_time(time)))
             
-def __init__(self,first_name,second_name,phone_number,service_provider):
-  self.service_provider=service_provider
-  self.airtime=[]
-  self.bills=[]
-  self.money=[]
-  self.received=[]
-  super().__init__(first_name,second_name,phone_number)
-  
+
+
 def paybills(self,amount):
         try: 
             amount-1
